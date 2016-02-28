@@ -1,58 +1,129 @@
 html{
 	front-family:Helvetica, Arial;
 	font-size: 18px;
+	/*font-size在HTML中表示基础字体的大小*/
 }
 
 
 body{
-	background-color: #000000;
- color :white;
-}
-h1{
-	font-size: 1rem
-	font-weight:normal;
-	text-align: center;
-}
-ul{
-	list-style-type: none;
+	 background-color: black;
+     color :rgba(255,255,255,1);
+     /*Opacity：.5; 字体透明度； ＃000000 16进制的色彩表示； 
+     rgba另一种色彩表示*/
 }
 
-ul li{
-	display: inline-block;
+
+
+h1{
+	font-size: 1rem;
+	/*rem确定是几倍大小的基础字体大小*/
+	font-weight:800;
+	/*字体选择normal，bold，thin或者用数字*/
+	text-align: center;
 }
+
+h2{
+     font-size: 1.5rem;
+
+}
+
 
 nav ul li{
 	display: inline-block;
-	margin: 50px;
-	color :#1099FF;
-	background-color: white;
-	padding: 5px;
-	border: 5px solid black;
+	margin: 10px 70px;
+	/*margin:20px 50px 0 20px*/
+	/*用Margin时第一个参数是上下，第二个是左右*/
+	/*四个时候的顺序是 上 右 下 左*/
+	/*margin-top :20px
+	  margin-right:50px
+	  margin-bottom:0
+	  margin-left:50px;*/
+	color : #1099FF;
+	/*background-color: blue;*/
+	padding: 5px 10px;
+	border: 3px solid black;
 	border-radius: 5px;
 	transition: background-color .5s;
 
 }
+
+
 nav ul li:hover{
 	background-color:grey
+
 }
+
+
 nav ul{
 	text-align: center;
-	list-style-type: none
+	list-style-type: none;
+	/*取消文字前面的点*/
+	margin: 0;
 }
+
+
 nav {
 	background-color :white;
+	width:100%;
+	/*position: fixed;*/
+	/*z-index: 999;*/
 }
 
 .banner{
+	margin: 0 0 0 0;
 	width:100% ;
 
 }
 
-div ul li{
-img src =
+/*body ul ul div{
+	display: inline-block;
+	font-size: 2rem;
+	text-align: center;
+	margin: 10px;
+	list-style-type: none;
+}*/
 
+
+
+.pic{
+	display: inline-block;
+	width:30%;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	font-size: 2rem;
+	border: 0px solid;
+	transition: opacity.5s;
+	
 }
 
+.pic:hover{
+	opacity: 1;
+}
 
+.top{
+	margin: 60px;
+}
+.movie-table{
+	display: inline-block;
+	margin: 10px 20px 20px 20px;
+}
 
+.movie img {
+	width: 100%;
+}
+
+.movie-table{
+	width: 50%;
+	border: 1px solid white;
+	text-align: center;
+	margin-left: 25%;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+.movie-table tr th,.movie-table tr td {
+	padding: 20px;
+	border:1px solid white;
+
+}
 
