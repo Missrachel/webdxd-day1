@@ -4,6 +4,7 @@
 	<title>Movie list</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
 <div class="movie table">
@@ -22,7 +23,7 @@
    		<th class="column1">name</th>
    		<th class="column2">Release</th>
    		<th class="column3">Director</th>
-
+      <th class="column4">Buy Tickets</th>
    	</tr>
   
     
@@ -31,6 +32,11 @@
    		<td class="column1">Deadpool</td>
    		<td class="column2">February 12,2016</td>
    		<td class="column3">Tim Miller</td>
+      <td class="center-icon">
+      <button class="ticket-btn fa-2x">
+      <i class="fa fa-ticket"></i>
+      </i><span id="deadpool">10</span>Left
+      </button>
    	</tr>
    
 
@@ -39,19 +45,31 @@
    	    <td class="column1">Brave</td>
    		<td class="column2">June 10,2012</td>
    		<td class="column3">Mark Andrew</td>	
-
+      <td class="center-icon">
+      <button class="ticket-btn fa-2x"><!--onClick="buyTicket(this)">-->
+      <i class="fa fa-ticket"></i>
+      </i><span id="Brave">10</span>Left
+      </button>
    	</tr>
    
 <tr>
    	  	<td class="column1">3G</td>
    		<td class="column2">May 10,2013</td>
    		<td class="column3">Rachel Kuller</td>	
+      <td class="center-icon">
+      <button class="ticket-btn fa-2x"><!-- onClick="buyTicket(this)">-->
+      <i class="fa fa-ticket">
+        </i><span id="3G">10</span>Left
 
+      </button>
    	</tr>
+
+
 
    
 </table>
-
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/ticket.js"></script>
    
     
 </body>

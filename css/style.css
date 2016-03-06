@@ -173,3 +173,18 @@ nav{
 	width: 300px;
 }
 
+
+.center-icon{
+	text-align: center;
+}
+
+.ticket-btn{
+	background-color: black; 
+	background: transparent;
+	border-radius: 5px;
+	padding:10px;
+}
+
+.alert-btn{
+	background-color: red;
+}
